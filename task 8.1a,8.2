@@ -1,0 +1,110 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOOdv5QKURw+eQ7UcRHbrls",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PAVAN-29518/python-files/blob/main/task%208.1a%2C8.2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ddef number_sequence(start, end, step=1):\n",
+        "    current = start\n",
+        "    while current <= end:\n",
+        "        yield current\n",
+        "        current += step\n",
+        "start = int(input(\"Enter the starting number: \"))\n",
+        "end = int(input(\"Enter the ending number: \"))\n",
+        "step = int(input(\"Enter the step value: \"))\n",
+        "# Create the generator\n",
+        "sequence_generator = number_sequence(start, end, step)\n",
+        "# Print the generated sequence of numbers\n",
+        "for number in sequence_generator:\n",
+        "    print(number)\n",
+        "\n",
+        "\n",
+        "\n",
+        "def my_generator(n):\n",
+        "    # initialize counter\n",
+        "    value = 0\n",
+        "    # loop until counter is less than n\n",
+        "    while value < n:\n",
+        "        # produce the current value of the counter\n",
+        "        yield value\n",
+        "        # increment the counter\n",
+        "        value += 1\n",
+        "# iterate over the generator object produced by my_generator\n",
+        "for value in my_generator(3):\n",
+        "    # print each value produced by generator\n",
+        "    print(value)\n",
+        "\n",
+        "\n",
+        "def uppercase_decorator(func):\n",
+        "    def wrapper(text):\n",
+        "        return func(text).upper()\n",
+        "    return wrapper\n",
+        "\n",
+        "def lowercase_decorator(func):\n",
+        "    def wrapper(text):\n",
+        "        return func(text).lower()\n",
+        "    return wrapper\n",
+        "\n",
+        "@uppercase_decorator\n",
+        "def shout(text):\n",
+        "    return text\n",
+        "\n",
+        "@lowercase_decorator\n",
+        "def whisper(text):\n",
+        "    return text\n",
+        "\n",
+        "def greet(func):\n",
+        "    greeting = func(\"Hi, I am created by a function passed as an argument.\")\n",
+        "    print(greeting)\n",
+        "\n",
+        "greet(shout)\n",
+        "greet(whisper)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "SMPPqUJN85Zo",
+        "outputId": "b0273915-eebb-4239-8d45-19b412af6a9a"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (ipython-input-2088658659.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-2088658659.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    ddef number_sequence(start, end, step=1):\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
