@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPV6WwytI+s2vt36d+yJDx3",
+      "authorship_tag": "ABX9TyOOL0ezMTkuzW6p5xnBO4AZ",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -72,9 +72,6 @@
         "\n",
         "\n",
         "\n",
-        "\n",
-        "\n",
-        "\n",
         "\n"
       ],
       "metadata": {
@@ -83,16 +80,16 @@
           "height": 106
         },
         "id": "SMPPqUJN85Zo",
-        "outputId": "0a0e873c-ca26-48ae-af7f-c7157b3bf219"
+        "outputId": "8758efc3-318b-4614-ff8c-0ec367b70756"
       },
-      "execution_count": 8,
+      "execution_count": 9,
       "outputs": [
         {
           "output_type": "error",
           "ename": "SyntaxError",
-          "evalue": "invalid character '“' (U+201C) (ipython-input-576012164.py, line 23)",
+          "evalue": "invalid character '“' (U+201C) (ipython-input-2488949358.py, line 23)",
           "traceback": [
-            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-576012164.py\"\u001b[0;36m, line \u001b[0;32m23\u001b[0m\n\u001b[0;31m    “Error objects are thrown when runtime Error occur.\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character '“' (U+201C)\n"
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-2488949358.py\"\u001b[0;36m, line \u001b[0;32m23\u001b[0m\n\u001b[0;31m    “Error objects are thrown when runtime Error occur.\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character '“' (U+201C)\n"
           ]
         }
       ]
