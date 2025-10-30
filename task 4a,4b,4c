@@ -1,0 +1,136 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOK0+GQhthqWZS9ma5bjrZQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PAVAN-29518/python-files/blob/main/task%204a%2C4b%2C4c\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add(a, b):\n",
+        "    return a + b\n",
+        "def subtract(a, b):\n",
+        "    return a - b\n",
+        "def multiply(a, b):\n",
+        "    return a * b\n",
+        "def divide(a, b):\n",
+        "    if b == 0:\n",
+        "        raise ValueError(\"Cannot divide by zero\")\n",
+        "    return a / b\n",
+        "\n",
+        "import mymath\n",
+        "\n",
+        "a = 10\n",
+        "b = 5\n",
+        "print(\"Addition:\", mymath.add(a, b))\n",
+        "print(\"Subtraction:\", mymath.subtract(a, b))\n",
+        "print(\"Multiplication:\", mymath.multiply(a, b))\n",
+        "print(\"Division:\", mymath.divide(a, b))\n",
+        "\n",
+        "\n",
+        "#Add Elements: Add elements to the list.\n",
+        "list=[10,20]\n",
+        "a=30\n",
+        "\n",
+        "list.append(a)\n",
+        "print(list)\n",
+        "#Remove Elements: Remove specific elements from the list.\n",
+        "list.pop(1)#by index value\n",
+        "print(list)\n",
+        "list.remove(10)#by itemname\n",
+        "print(list)\n",
+        "#Sort Elements: Sort the list in ascending and descending order.\n",
+        "l=[5,8,9,15,30,89]\n",
+        "print(sorted(l))\n",
+        "#Find Minimum and Maximum: Find the minimum and maximum elements in thelist.\n",
+        "print(\"The minimum value is:\",min(l))\n",
+        "print(\"The maximum value is:\",max(l))\n",
+        "#Calculate Sum and Average\n",
+        "print(\"The sum is:\",sum(l))\n",
+        "print(\"The average is :\",((sum(l)/len(l))))\n",
+        "\n",
+        "\n",
+        "#Create a Tuple: Define a tuple with elements of different data types(10, 'hello', 3.14, 'world')\n",
+        "tuple=(10, 'hello', 3.14, 'world')\n",
+        "print(tuple)\n",
+        "#Access Elements: Access individual elements and slices of the tuple.\n",
+        "for i in tuple:\n",
+        "    print(i)\n",
+        "print(tuple[1:3])\n",
+        "print(tuple[:-1])\n",
+        "#Concatenate Tuples: Combine two tuples to create a new tuple.\n",
+        "t2=(5,0.5)\n",
+        "t3=tuple+t2\n",
+        "print(t3)\n",
+        "#Immutable Nature: Attempt to modify elements of the tuple and handle the resulting error.\n",
+        "tuple(3)=\"PI\" #ERROR\n",
+        "\n",
+        "#Create a Dictionary: Define a dictionary with key-value pairs of different data types.({'name': 'Alice', 'age': 30, 'city': 'New York'}\n",
+        "dictionary={'name': 'Alice', 'age': 30, 'city': 'New York'}\n",
+        "print(dictionary)\n",
+        "#Access Values: Access values using keys.\n",
+        "print(dictionary['name'])\n",
+        "print(dictionary['age'])\n",
+        "\n",
+        "#Modify Dictionary: Update values, add new key-value pairs, and remove existing pairs.\n",
+        "dictionary['name']= \"James\"\n",
+        "print(dictionary)\n",
+        "dictionary.pop('city')\n",
+        "print(dictionary)\n",
+        "#Iterate Over Dictionary: Use loops to iterate over keys or values.\n",
+        "for k in dictionary:\n",
+        "    print(\"KEY:\",k)\n",
+        "\n",
+        "print(dictionary.items())\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "SMPPqUJN85Zo",
+        "outputId": "3e3d75bb-dc8f-4a1a-d473-cb48f8c278d1"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "cannot assign to function call here. Maybe you meant '==' instead of '='? (ipython-input-466281321.py, line 57)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-466281321.py\"\u001b[0;36m, line \u001b[0;32m57\u001b[0m\n\u001b[0;31m    tuple(3)=\"PI\" #ERROR\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m cannot assign to function call here. Maybe you meant '==' instead of '='?\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
