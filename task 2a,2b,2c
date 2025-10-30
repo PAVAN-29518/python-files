@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNt4u2SZK9X7+u2S+OrfeTb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/PAVAN-29518/python-files/blob/main/task%202a%2C2b%2C2c\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score =int(input(\"Enter the score:\"))\n",
+        "if score>=90:\n",
+        "    print(\"The Grade is A\")\n",
+        "elif (score <=89 and score>=80):\n",
+        "    print(\"The Grade is B\")\n",
+        "elif(score <=79 and score >=70):\n",
+        "    print(\"The Grade is C\")\n",
+        "elif( score <=69 and score >=60):\n",
+        "    print(\"The Grade is D\")\n",
+        "else:\n",
+        "    print(\"The Grade is F\")\n",
+        "\n",
+        "\n",
+        "# Displaying the first 10 natural numbers\n",
+        "print(\"The first 10 natural numbers are:\")\n",
+        "for i in range(1, 11):  # Loop from 1 to 10\n",
+        "    print(i)\n",
+        "\n",
+        "digit=int(input(\"Enter the Number:\"))\n",
+        "string=str(digit) #since integer doesn't have len()\n",
+        "count=len(string)\n",
+        "print(\"The number of digits in \",digit,\"is :\",count)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SMPPqUJN85Zo",
+        "outputId": "d3493986-c6aa-40f5-ddcb-90f1012745fc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the score:10\n",
+            "The Grade is F\n",
+            "The first 10 natural numbers are:\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "Enter the Number:20\n",
+            "The number of digits in  20 is : 2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
